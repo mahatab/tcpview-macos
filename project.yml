@@ -1,0 +1,40 @@
+name: TCPViewMac
+options:
+  bundleIdPrefix: com.mahatabrashid
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_OBJC_BRIDGING_HEADER: TCPViewMac/TCPViewMac-Bridging-Header.h
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_APP_SANDBOX: false
+    ENABLE_HARDENED_RUNTIME: false
+
+targets:
+  TCPViewMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: TCPViewMac
+        excludes:
+          - "**/*.xcassets"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mahatabrashid.TCPViewMac
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        PRODUCT_NAME: TCPView
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_CFBundleDisplayName: "TCPView for macOS"
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.utilities"
+        INFOPLIST_KEY_NSMainStoryboardFile: ""
+    entitlements:
+      path: TCPViewMac/Resources/TCPViewMac.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
