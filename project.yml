@@ -23,9 +23,13 @@ targets:
       - path: TCPViewMac
         excludes:
           - "**/*.xcassets"
+      - path: TCPViewMac/Resources/Assets.xcassets
+        type: folder
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.mahatabrashid.TCPViewMac
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_GENERATION_MODE: GeneratedFile
         PRODUCT_NAME: TCPView
         MARKETING_VERSION: "1.0.0"
