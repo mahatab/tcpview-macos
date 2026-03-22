@@ -8,6 +8,8 @@ Built with SwiftUI. Zero external dependencies.
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+![TCPView for macOS](tcpviewmac.png)
+
 ## Features
 
 - **Real-time connection monitoring** — View all TCP/UDP (IPv4 and IPv6) endpoints with automatic refresh (1s, 2s, 5s, or paused)
