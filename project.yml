@@ -21,11 +21,6 @@ targets:
     platform: macOS
     sources:
       - path: TCPViewMac
-        excludes:
-          - "**/*.xcassets"
-      - path: TCPViewMac/Resources/Assets.xcassets
-        type: folder
-        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.mahatabrashid.TCPViewMac
