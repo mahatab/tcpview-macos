@@ -31,7 +31,7 @@ Built with SwiftUI. Zero external dependencies.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tcpview-macos.git
+git clone https://github.com/mahatab/tcpview-macos.git
 cd tcpview-macos
 
 # Generate Xcode project (requires xcodegen)
